@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\TableBukuController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,3 +56,20 @@ Route::get('/admin/table-penerbit/', [TableBukuController::class, 'penerbit']);
 Route::post('/admin/table/tambah', [TableBukuController::class, 'create']);
 
 Route::post('/admin/table-penulis/', [TableBukuController::class, 'table_penulis']);
+
+//Auth
+Route::get('/login', [ClientController::class, 'login']);
+Route::get('/register', [ClientController::class, 'register']);
+Route::get('/resetpw', [ClientController::class, 'resetpw']);
+
+
+//user page
+Route::get('/landing', [ClientController::class, 'landing']);
+Route::get('/home', [ClientController::class, 'home']);
+Route::get('/formpinjam', [ClientController::class, 'formpinjam']);
+Route::get('/favorite', [ClientController::class, 'favorite']);
+Route::get('/borrow', [ClientController::class, 'borrow']);
+Route::get('/history', [ClientController::class, 'history']);
+Route::get('/desk', [ClientController::class, 'desk']);
+Route::get('/profile', [ClientController::class, 'profile']);
+
