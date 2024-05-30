@@ -19,9 +19,12 @@
 
 
                 <div class="flex flex-row gap-3">
-                    <button type="button" class=" w-30 items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
-                        <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                    <button type="button"
+                        class=" w-30 items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+                        <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                         </svg>
 
                     </button>
@@ -45,30 +48,37 @@
                                 </svg>
                                 <span class="flex justify-center items-center">Favorite</span>
 
+
+
+                            </div>
+
+                            <div class="flex flex-col gap-3 h-full">
+                                <button id="openModalButton"
+                                    class="h-12 w-full border border-orange-600 text-orange-600 shadow-2xl rounded-md hover:bg-orange-500 hover:text-white transition duration-300">
+                                    <span class="font-semibold">Rating now</span>
+                                </button>
+
+
+
+                                @include('userpage.modalratings')
+
+                                <div class="flex flex-row justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="orange"
+                                            d="m12 14.604l2.467 1.869q.242.18.494.013t.166-.461l-.935-3.09l2.396-1.692q.264-.195.168-.484q-.097-.29-.406-.29h-2.942l-1.01-3.246q-.104-.292-.397-.292t-.399.292l-1.01 3.246H7.65q-.31 0-.406.29q-.096.289.168.484l2.396 1.692l-.935 3.09q-.086.292.166.46t.494-.012zM12.003 21q-1.867 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709M12 20q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20" />
+                                    </svg>
+                                    <span class="flex justify-center items-center">5/5</span>
+
+                                </div>
                             </div>
                         </div>
 
-                        <div class="h-full">
+                        <div class="flex flex-col gap-10 h-full">
 
-                            {{-- ratting --}}
-                            <div class="flex flex-col justify-center items-center">
-                                <div class="flex flex-row">
-                                    @for ($i = 0; $i < 5; $i++)
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
-                                            viewBox="0 0 256 256">
-                                            <g fill="orange">
-                                                <path
-                                                    d="m229.06 108.79l-48.7 42l14.88 62.79a8.4 8.4 0 0 1-12.52 9.17L128 189.09l-54.72 33.65a8.4 8.4 0 0 1-12.52-9.17l14.88-62.79l-48.7-42A8.46 8.46 0 0 1 31.73 94l63.91-5.2l24.62-59.6a8.36 8.36 0 0 1 15.48 0l24.62 59.6l63.91 5.2a8.46 8.46 0 0 1 4.79 14.79"
-                                                    opacity="0.45" />
-                                                <path
-                                                    d="M239.18 97.26A16.38 16.38 0 0 0 224.92 86l-59-4.76l-22.78-55.09a16.36 16.36 0 0 0-30.27 0L90.11 81.23L31.08 86a16.46 16.46 0 0 0-9.37 28.86l45 38.83L53 211.75a16.38 16.38 0 0 0 24.5 17.82l50.5-31.08l50.53 31.08A16.4 16.4 0 0 0 203 211.75l-13.76-58.07l45-38.83a16.43 16.43 0 0 0 4.94-17.59m-15.34 5.47l-48.7 42a8 8 0 0 0-2.56 7.91l14.88 62.8a.37.37 0 0 1-.17.48c-.18.14-.23.11-.38 0l-54.72-33.65a8 8 0 0 0-8.38 0l-54.72 33.67c-.15.09-.19.12-.38 0a.37.37 0 0 1-.17-.48l14.88-62.8a8 8 0 0 0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16a8 8 0 0 0 6.72-4.94l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153 91.86a8 8 0 0 0 6.75 4.92l63.92 5.16c.15 0 .24 0 .33.29s0 .4-.16.5" />
-                                            </g>
-                                        </svg>
-                                    @endfor
-                                </div>
-                                <span class="flex justify-center">4,5/5</span>
-                            </div>
-                            {{-- ratting --}}
+
+
+
 
 
                             <div
@@ -79,10 +89,10 @@
                                     <p class="text-gray-700">9/11 - 9/11</p>
                                 </div>
 
-                                <div class="flex flex-col justify-center  items-center gap-4">
+                                <div class="flex flex-col justify-center  items-center gap-4 w-full">
                                     <button
                                         class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
-                                        <span class="relative z-10 font-semibold ">Pinjam Sekarang!</span>
+                                        <span class="relative z-10 font-semibold ">Pinjam!</span>
                                     </button>
                                     <button
                                         class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
@@ -140,7 +150,8 @@
                                         class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
                                         <img class="mr-2 w-6 h-6 rounded-full"
                                             src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                            alt="Michael Gough">Michael Gough</p>
+                                            alt="Michael Gough">Michael Gough
+                                    </p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate
                                             datetime="2022-02-08" title="February 8th, 2022">Feb. 8, 2022</time></p>
                                 </div>
@@ -199,7 +210,8 @@
                                         class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
                                         <img class="mr-2 w-6 h-6 rounded-full"
                                             src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                            alt="Jese Leos">Jese Leos</p>
+                                            alt="Jese Leos">Jese Leos
+                                    </p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate
                                             datetime="2022-02-12" title="February 12th, 2022">Feb. 12, 2022</time></p>
                                 </div>
@@ -255,7 +267,8 @@
                                         class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
                                         <img class="mr-2 w-6 h-6 rounded-full"
                                             src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
-                                            alt="Bonnie Green">Bonnie Green</p>
+                                            alt="Bonnie Green">Bonnie Green
+                                    </p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate
                                             datetime="2022-03-12" title="March 12th, 2022">Mar. 12, 2022</time></p>
                                 </div>
@@ -312,7 +325,8 @@
                                         class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
                                         <img class="mr-2 w-6 h-6 rounded-full"
                                             src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
-                                            alt="Helene Engels">Helene Engels</p>
+                                            alt="Helene Engels">Helene Engels
+                                    </p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate
                                             datetime="2022-06-23" title="June 23rd, 2022">Jun. 23, 2022</time></p>
                                 </div>
@@ -368,6 +382,15 @@
 
         </div>
     </div>
+
+    <script>
+        const openModalButton = document.getElementById('openModalButton');
+        const modal = document.getElementById('modal');
+
+        openModalButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+    </script>
 
 </body>
 

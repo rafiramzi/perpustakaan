@@ -72,4 +72,5 @@ Route::get('/borrow', [ClientController::class, 'borrow']);
 Route::get('/history', [ClientController::class, 'history']);
 Route::get('/desk', [ClientController::class, 'desk']);
 Route::get('/profile', [ClientController::class, 'profile']);
+Route::get('/modalRatings', [ClientController::class, 'modalRatings']);
 

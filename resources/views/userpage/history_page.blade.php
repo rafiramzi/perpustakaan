@@ -28,7 +28,7 @@
 
                     <p class="text-xl font-medium text-black">Riwayat</p>
                     <div class="flex flex-col bg-slate-100 shadow-lg rounded-lg md:flex-row justify-center gap-6">
-                        <div class="flex flex-col gap-5 p-2 md:border-r-2 border-dashed border-black">
+                        <div class="flex flex-col gap-5 p-2 md:border-r-2 w-full border-dashed border-black">
                             <div class="flex flex-row h-full p-5 gap-3">
                                 <!-- Card Carousel -->
                                 <div class="w-44 h-64 shadow-lg rounded-md shrink-0 overflow-hidden">
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="flex flex-col bg-slate-100 shadow-lg rounded-lg md:flex-row justify-center gap-6">
-                        <div class="flex flex-col gap-5 p-2 md:border-r-2 border-dashed border-black">
+                        <div class="flex flex-col gap-5 p-2 md:border-r-2 w-full border-dashed border-black">
                             <div class="flex flex-row h-full p-5 gap-3">
                                 <!-- Card Carousel -->
                                 <div class="w-44 h-64 shadow-lg rounded-md shrink-0 overflow-hidden">
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="flex flex-col bg-slate-100 shadow-lg rounded-lg md:flex-row justify-center gap-6">
-                        <div class="flex flex-col gap-5 p-2 md:border-r-2 border-dashed border-black">
+                        <div class="flex flex-col gap-5 p-2 md:border-r-2 w-full border-dashed border-black">
                             <div class="flex flex-row h-full p-5 gap-3">
                                 <!-- Card Carousel -->
                                 <div class="w-44 h-64 shadow-lg rounded-md shrink-0 overflow-hidden">

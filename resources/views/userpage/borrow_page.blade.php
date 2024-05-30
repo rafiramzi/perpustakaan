@@ -29,7 +29,7 @@
 
                     <p class="text-xl font-medium text-black">Peminjaman</p>
                     <div class="flex flex-col bg-slate-100 shadow-lg rounded-lg md:flex-row justify-center gap-6">
-                        <div class="flex flex-col gap-5 p-2 md:border-r-2 border-dashed border-black">
+                        <div class="flex flex-col gap-5 p-2 md:border-r-2 w-full border-dashed border-black">
                             <div class="flex flex-row h-full p-5 gap-3">
                                 <!-- Card Carousel -->
                                 <div class="w-44 h-64 shadow-lg rounded-md shrink-0 overflow-hidden">
@@ -58,11 +58,11 @@
                             <div class="flex flex-col w-full border justify-center  items-center gap-4">
                                 <button
                                     class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
-                                    <span class="relative z-10 font-semibold ">Pinjam Sekarang!</span>
+                                    <span class="relative z-10 font-semibold ">Kembalikan</span>
                                 </button>
                                 <button
                                     class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
-                                    <span class="relative z-10 font-semibold ">Pinjam Sekarang!</span>
+                                    <span class="relative z-10 font-semibold ">Batalkan</span>
                                 </button>
 
                             </div>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-slate-100 shadow-lg rounded-lg md:flex-row justify-center gap-6">
-                        <div class="flex flex-col gap-5 p-2 md:border-r-2 border-dashed border-black">
+                        <div class="flex flex-col gap-5 p-2 md:border-r-2 w-full border-dashed border-black">
                             <div class="flex flex-row h-full p-5 gap-3">
                                 <!-- Card Carousel -->
                                 <div class="w-44 h-64 shadow-lg rounded-md shrink-0 overflow-hidden">
@@ -103,11 +103,11 @@
                             <div class="flex flex-col w-full border justify-center  items-center gap-4">
                                 <button
                                     class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
-                                    <span class="relative z-10 font-semibold ">Pinjam Sekarang!</span>
+                                    <span class="relative z-10 font-semibold ">Kembalikan</span>
                                 </button>
                                 <button
                                     class="relative h-12 w-full overflow-hidden border border-indigo-600 text-indigo-600 shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-indigo-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-full hover:before:opacity-80 rounded-md ">
-                                    <span class="relative z-10 font-semibold ">Pinjam Sekarang!</span>
+                                    <span class="relative z-10 font-semibold ">Batalkan</span>
                                 </button>
 
                             </div>

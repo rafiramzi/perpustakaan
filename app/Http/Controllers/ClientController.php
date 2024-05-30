@@ -43,4 +43,7 @@ class ClientController extends Controller
     public function profile(){
         return view('userpage/profile_page');
     }
+    public function modalRatings(){
+        return view('userpage/modalratings_page');
+    }
 }
