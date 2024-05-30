@@ -39,11 +39,7 @@
 
                                     <h2 class="text-xl font-bold mb-2">Judul buku</h2>
                                     <p class="text-gray-700">Card content goes here.</p>
-                                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Esse,
-                                        recusandae? Odit qui adipisci totam soluta dicta delectus iusto sit asperiores
-                                        dolorum,
-                                        natus voluptas fuga deserunt molestiae ex laborum et ut.</p>
+                                    <p class="text-gray-700">Lorem ipsum dolor </p>
                                 </div>
 
                             </div>
